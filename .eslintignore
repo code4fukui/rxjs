@@ -1,1 +1,3 @@
 integration/side-effects/snapshots/
+bundle.js
+rxjs.js

@@ -34,6 +34,19 @@ By contributing or commenting on issues in this repository, whether you've read 
 
 ## Installation and Usage
 
+### ES module
+
+```JavaScript
+import { range, filter, map } from "https://code4fukui.github.io/rxjs/rxjs.js";
+
+range(1, 200)
+  .pipe(
+    filter(x => x % 2 === 1),
+    map(x => x + x)
+  )
+  .subscribe(x => console.log(x));
+```
+
 ### ES6 via npm
 
 ```shell
@@ -48,10 +61,10 @@ import { range, filter, map } from 'rxjs';
 
 range(1, 200)
   .pipe(
-    filter(x => x % 2 === 1),
-    map(x => x + x)
+    filter((x) => x % 2 === 1),
+    map((x) => x + x)
   )
-  .subscribe(x => console.log(x));
+  .subscribe((x) => console.log(x));
 ```
 
 If you're using RxJS version below 7.2, you can pull in any operator you need from one spot, under `'rxjs/operators'`.
@@ -62,10 +75,10 @@ import { filter, map } from 'rxjs/operators';
 
 range(1, 200)
   .pipe(
-    filter(x => x % 2 === 1),
-    map(x => x + x)
+    filter((x) => x % 2 === 1),
+    map((x) => x + x)
   )
-  .subscribe(x => console.log(x));
+  .subscribe((x) => console.log(x));
 ```
 
 ### CDN
@@ -82,10 +95,10 @@ const { filter, map } = rxjs.operators;
 
 range(1, 200)
   .pipe(
-    filter(x => x % 2 === 1),
-    map(x => x + x)
+    filter((x) => x % 2 === 1),
+    map((x) => x + x)
   )
-  .subscribe(x => console.log(x));
+  .subscribe((x) => console.log(x));
 ```
 
 ## Goals
