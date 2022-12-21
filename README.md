@@ -37,7 +37,7 @@ By contributing or commenting on issues in this repository, whether you've read 
 ### ES module
 
 ```JavaScript
-import { range, filter, map } from "https://code4fukui.github.io/rxjs/rxjs.js";
+import { range, filter, map } from "https://code4fukui.github.io/rxjs-es/rxjs.js";
 
 range(1, 200)
   .pipe(
